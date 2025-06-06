@@ -129,7 +129,9 @@
 .lap-icn{
     font-size: 50px;
 }
-
+.intern-sec-top-heading .mobile-heading p{
+    color: black;
+}
 @media screen and (max-width: 768px) {
     .intern-sec-top-heading {
         text-align: center;
