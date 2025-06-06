@@ -110,7 +110,8 @@ input:focus, textarea:focus {
 }
 
 .submit-btn {
-  background: linear-gradient(90deg, #0073e6 0%, #005bb5 100%);
+  background-color: #00bfa6;
+  /* background: linear-gradient(90deg, #0073e6 0%, #005bb5 100%); */
   color: white;
   border: none;
   padding: 14px 28px;
@@ -125,7 +126,7 @@ input:focus, textarea:focus {
 }
 
 .submit-btn:hover {
-  background: linear-gradient(90deg, #005bb5 0%, #003f7f 100%);
+  background-color: #00d8bb;
   box-shadow: 0 6px 20px rgba(0,91,181,0.6);
 }
 
@@ -162,7 +163,7 @@ input:focus, textarea:focus {
 }
 
 .contact-info a {
-  color: #0073e6;
+  color:#00bfa6;;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
