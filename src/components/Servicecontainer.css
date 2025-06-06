@@ -1,0 +1,83 @@
+.web-main-serv .web {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    border-radius: 20px;
+
+}
+
+.web h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: start;
+}
+
+.web-cont {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    gap: 20px;
+}
+
+
+.web-img {
+    height: 50vh;
+}
+
+.web-main-serv .web .web-img img {
+    border-radius: 40px;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .web-main-serv .web {
+        gap: 10px;
+    }
+
+    .web-main-serv .web {
+        flex-direction: column;
+    }
+
+    .web-img {
+        height: auto;
+    }
+
+    .web-main-serv .web-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+
+    .web-main-serv .web .web-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .web-cont {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        padding: 0px 20px;
+    }
+
+    .web h3 {
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2rem;
+        text-align: justify;
+        color: rgb(45, 45, 45);
+    }
+    
+
+
+}

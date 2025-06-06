@@ -1,0 +1,243 @@
+.intern-sec-main {
+    padding: 0px 40px;
+}
+
+
+.intern-sec {
+    padding: 40px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.intern-left {
+    padding-left: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #ffaf7c;
+    width: 50%;
+    color: white;
+    display: flex;
+    align-items: start;
+    gap: 3vh;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.intern-right {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ffaf7c;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.intern-right img {
+
+    width: 90%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.intern-sec-top-heading {
+    text-align: center;
+}
+
+.intern-sec-top-heading h1,
+.intern-sec-top-heading h1 p {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.intern-sec-top-heading .cog-int-cog {
+    color: #00bfa6;
+}
+
+
+/* left section   */
+.intern-left .intern-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+.intern-left .intern-heading h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+}
+
+.intern-main-desc {
+    font-size: larger;
+    font-weight: 400;
+}
+
+.intern-tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.intern-tags .i-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 7px;
+    background: linear-gradient(to right, #00C389, #0071BC);
+    border-radius: 10px;
+}
+
+.btn-register-r {
+    width: 30%;
+
+    padding: 30px;
+    background: linear-gradient(to right, #00C389, #0071BC);
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.mobile-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.lap-icn{
+    font-size: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .intern-sec-top-heading {
+        text-align: center;
+    }
+
+    .intern-sec-top-heading h1,
+    .intern-sec-top-heading h1 p {
+        flex-direction: column;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intern-sec-top-heading h1 p {
+        color: #00bfa6;
+    }
+
+    .mobile-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .intern-sec {
+        padding: 40px 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .intern-left {
+        order: 2;
+        padding-left: 2vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        background-color: #ffaf7c;
+        width: 100%;
+        color: white;
+        display: flex;
+        align-items: start;
+        gap: 1  vh;
+        justify-content: start;
+        flex-direction: column;
+        border-top-left-radius: 0px;
+        padding: 0px 20px;
+        padding-bottom: 20px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .intern-right {
+        order: 1;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+            border-bottom-right-radius: 0px;
+
+    }
+
+    .intern-right img {
+
+        width: 90%;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+    
+
+    .intern-left .intern-heading{
+        text-align: start;
+    }
+    .intern-left .intern-heading h1{
+        
+        font-size: 2rem;
+    }
+    .lap-icn{
+        font-size: 30px;
+    }
+    .intern-main-desc{
+        text-align: justify;
+        font-size: smaller;
+    }
+    .intern-tags .i-tag p{
+        font-size: 7px;
+        text-align: center;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+    }
+    .apl-btn-abv-txt{
+        font-size: smaller;
+    }
+    .btn-register-r{
+        width: 40%;
+        padding: 10px 10px;
+    }
+    .btn-register-r:hover{
+        scale: 1.2;
+    }
+
+    .avl-intern-heading .avl-int-h1 {
+        display: flex;
+        gap: 0px;
+    }
+
+}

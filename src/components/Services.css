@@ -1,0 +1,123 @@
+.services-sec {
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    text-align: justify;
+    width: 100%;
+     /* background-color: #00204a; */
+}
+
+.ser-head {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.ser-head .our-serv-text{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-serv-text p{
+    font-weight: 700;
+    text-align: start;
+}
+
+
+
+.ser-head h1,
+.ser-head h3 {
+    font-weight: 200;
+}
+
+
+
+/* .web-main-serv {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+} */
+
+.our-serv-clr{
+    color: #00bfa6;
+}
+
+
+.serv-text-main{
+    font-size: larger;
+    color: rgb(96, 96, 96);
+}
+
+.services-heading{
+    font-size: 1.5rem;
+}
+
+.ser-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
+}
+
+
+.serv-tags{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.serv-tags p{
+    padding: 7px;
+    background-color:#f6f6f6;
+    color: black;
+    border-radius: 10px;
+    font-weight: light;
+    font-size: smaller;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serv-divs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.serv-divs-hr{
+    /* color: black; */
+    background-color: rgb(203, 203, 203);
+    padding: 1px 0px;
+    width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .services-sec{
+        padding: 20px 0px;
+    }
+    .ser-head .our-serv-text{
+    font-size: 2rem;
+    gap: 5px;
+}
+.ser-head{
+    gap: 10px;
+    align-items: start;
+}
+}

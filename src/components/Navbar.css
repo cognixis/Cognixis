@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 80px;
+}
+
+.navbar {
+  background-color: rgb(254,254,254);
+  color: black;
+  box-shadow: 0px 2px 30px black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', sans-serif;
+  /* color: #fff; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+  height: 80px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.cognixis-logo-img {
+  height: 100%;
+}
+
+.navbar-scrolled {
+  transition: all 0.3s;
+  background-color: rgb(254, 254, 254);
+
+
+  box-shadow: 0 2px 10px rgba(155, 155, 155, 0.3);
+}
+
+.navbar a,
+.navbar ul a {
+  color: black;
+}
+
+.nav-links .active {
+  color: white;
+  background-color: #00bfa6;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+}
+
+.logo-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+
+.nav-links a {
+
+  width: 9vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav-links a:hover {
+  transition: all 0.3s;
+  background-color: #00bfa6;
+  color: #ffffff;
+
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.nav-links li {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+}
+
+.cta a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(to right, #00C389, #0071BC);
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+
+
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+}
+
+.mobile-apply-btn {
+  display: none;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+
+  .cognixis-logo-img {
+    height: fit-content;
+    width: 30%;
+    border-radius: 10px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 24vh;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-links.mobile-open {
+    transition: right 3s ease-in-out;
+    display: flex;
+
+  }
+
+  .nav-links a {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 15px 20px;
+    border-top: 1px solid #ddd;
+    color: black;
+    background-color: white;
+  }
+
+  .mobile-apply-btn {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 15px 20px;
+    background-color: white;
+  }
+
+  .mobile-apply-btn .btn-register {
+    width: 100%;
+    text-align: start;
+    padding: 12px;
+    background: linear-gradient(to right, #00C389, #0071BC);
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  /* Hide desktop CTA on mobile */
+  .cta {
+    display: none;
+  }
+
+  .navbar {
+    padding: 0 20px;
+  }
+}
