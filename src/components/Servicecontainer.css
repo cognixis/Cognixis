@@ -36,6 +36,12 @@
     height: 100%;
 }
 
+.serv-tags{
+    box-sizing: border-box;
+    display: flex;
+    font-size: smaller;
+}
+
 @media screen and (max-width: 768px) {
     .web-main-serv .web {
         gap: 10px;
@@ -74,7 +80,7 @@
         font-weight: 700;
         font-style: normal;
         font-size: 2rem;
-        text-align: justify;
+        text-align: start;
         color: rgb(45, 45, 45);
     }
     
