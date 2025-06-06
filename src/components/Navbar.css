@@ -152,7 +152,7 @@ body {
   .nav-links {
     display: none;
     position: absolute;
-    top: 24vh;
+    top: 220px;
     left: 0;
     flex-direction: column;
     width: 100%;
