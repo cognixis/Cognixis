@@ -1,0 +1,118 @@
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease-out;
+}
+
+.loader {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.loader-circle:nth-child(1) {
+  border-top-color: #94a3b8;
+  animation: spin 1.2s linear infinite;
+}
+
+.loader-circle:nth-child(2) {
+  border-right-color: #64748b;
+  animation: spin 1.2s linear infinite reverse;
+  transform: scale(0.8);
+}
+
+.loader-logo {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.loader-text {
+  position: absolute;
+  bottom: -30px;
+  color: #64748b;
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+}
+
+.loader-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Add particle effects */
+.loader::before,
+.loader::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #2563eb;
+  animation: particle 2s linear infinite;
+  opacity: 0.3;
+}
+
+.loader::before {
+  animation-delay: 0.5s;
+  background: #3b82f6;
+}
+
+.loader::after {
+  animation-delay: 1s;
+  background: #60a5fa;
+}
+
+@keyframes particle {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(100px, -100px) scale(0);
+    opacity: 0;
+  }
+} 
