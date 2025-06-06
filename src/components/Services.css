@@ -29,7 +29,7 @@
 }
 
 .our-serv-text p{
-    font-weight: 700;
+    /* font-weight: 700; */
     text-align: start;
 }
 
@@ -57,12 +57,13 @@
 
 
 .serv-text-main{
-    font-size: larger;
+    /* font-size: larger; */
     color: rgb(96, 96, 96);
 }
 
 .services-heading{
     font-size: 1.5rem;
+    text-align: start;
 }
 
 .ser-head{
@@ -109,6 +110,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
     .services-sec{
         padding: 20px 0px;
     }
