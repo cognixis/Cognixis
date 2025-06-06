@@ -109,6 +109,11 @@
     width: 80%;
 }
 
+.our-serv-text p{
+    
+    font-weight: bold;
+}
+
 @media screen and (max-width: 768px) {
 
     .services-sec{
