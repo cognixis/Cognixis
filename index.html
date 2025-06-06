@@ -16,9 +16,27 @@
     <link rel="manifest" href="/site.webmanifest" />
     
     <title>Cognixis - Innovative IT Solutions for the Digital Era</title>
+    <link rel="stylesheet" href="/src/styles/loader.css">
   </head>
   <body>
+    <div id="loader" class="loader-container">
+      <div class="loader">
+        <div class="loader-circle"></div>
+        <div class="loader-circle"></div>
+        <img src="/cog-logo-updated-icon.jpg" alt="Cognixis Logo" class="loader-logo">
+        <div class="loader-text">Loading</div>
+      </div>
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.addEventListener('load', function() {
+        const loader = document.getElementById('loader');
+        loader.classList.add('loader-hidden');
+        setTimeout(() => {
+          loader.style.display = 'none';
+        }, 500);
+      });
+    </script>
   </body>
 </html>
